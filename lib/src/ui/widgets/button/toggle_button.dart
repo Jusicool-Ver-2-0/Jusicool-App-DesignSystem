@@ -21,7 +21,7 @@ class _ToggleButtonState extends State<ToggleButton> {
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 100),
-        width: 43,
+        width: 45,
         height: 24,
         decoration: BoxDecoration(
           color: isToggled ? AppColor.main : AppColor.gray200,
@@ -33,7 +33,7 @@ class _ToggleButtonState extends State<ToggleButton> {
             AnimatedPositioned(
               duration: const Duration(milliseconds: 100),
               curve: Curves.easeInOut,
-              right: isToggled ? 5 : 20,
+              right: isToggled ? 5 : 22,
               child: Container(
                 width: 18,
                 height: 18,

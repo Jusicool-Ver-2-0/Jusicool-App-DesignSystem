@@ -8,8 +8,8 @@ import 'package:tes/src/ui/widgets/textfiled/buy_textfiled.dart';
 import 'package:tes/src/ui/widgets/textfiled/default_textfiled.dart';
 import 'package:tes/src/ui/widgets/card/news_card.dart';
 import 'package:tes/src/ui/widgets/card/stock_card.dart';
-import 'package:tes/src/ui/widgets/card/log_card.dart'; // LogCard import 추가
-import 'package:tes/src/ui/widgets/card/month_stock_card.dart'; // MonthStockCard import 추가
+import 'package:tes/src/ui/widgets/card/log_card.dart';
+import 'package:tes/src/ui/widgets/card/month_stock_card.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,14 +48,13 @@ class ComponentTestScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // BuyTextField Section
               Text('BuyTextField', style: AppTypography.subTitle),
               const SizedBox(height: 8),
               const BuyTextField(
                 label: 'Amount',
                 hintText: 'Enter amount',
                 unit: 'USD',
-                balanceText: '보유 원화 142,400,000원',
+                balanceText: '보유 원화 142,400,000원 ',
               ),
               const SizedBox(height: 16),
 
